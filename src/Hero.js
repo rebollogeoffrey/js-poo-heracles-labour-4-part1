@@ -1,8 +1,8 @@
 class Hero extends Fighter {
   constructor(name, strength, dexterity, image, x, y, range) {
-      super(name, strength, dexterity, image, x, y, range)
-      this.weapon = null;
-      this.shield = null;
+    super(name, strength, dexterity, image, x, y, range)
+    this.weapon = null;
+    this.shield = null;
   }
 
 
@@ -22,4 +22,5 @@ class Hero extends Fighter {
   getRange() {
     return this.range + (this.weapon ? this.weapon.range : 0)
   }
+
 }
